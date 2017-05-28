@@ -1,0 +1,66 @@
+<html>
+<head>
+<link rel='stylesheet' href='src/index.css' />
+<title>tab14</title>
+<script src='src/jquery-2.2.4.min.js'></script>
+<script src='src/search.js'></script>
+
+<script>
+$(document).ready(function(){
+	$("body").keydown(function(key){
+         if ( key.which == 105 ) {
+            $('#hidden, #rightwo').show();
+            $('#bottom, #right').hide();
+        }
+    });
+    $("body").keydown(function(key){
+         if ( key.which == 104 ) {
+            $('#bottom, #right').show();
+            $('#hidden, #rightwo').hide();
+        }
+    });
+});
+</script>
+</head>
+
+<body>
+
+<div id='main'>
+<div id='otherone'><h1>Hello</h1></div>
+<div id='right'></div>
+<div id='rightwo'></div>
+<div id='bottom'>
+<div id='links'>
+<ul>
+<li>//</li>
+<li><a href='https://www.youtube.com'>youtube</a></a></li>
+<li><a href='https//www.facebook.com'>facebook</a></li>
+<li><a href='https://www.google.com'>google</a></li>
+<li><a href='http://www.fidelitasvirtual.org/moodle3/login/index.php'>uni</a></li>
+
+</ul>
+
+<ul>
+<li>//</li>
+<li><a href='https://boards.4chan.org/g'>/g/</a></li>
+<li><a href='https://boards.4chan.org/wg'>/wg/</a></li>
+<li><a href='https://boards.4chan.org/r9k'>/r9k/</a></li>
+<li><a href='https://boards.4chan.org/g'>/lit/</a></li>
+<li><a href='https://boards.4chan.org/fa'>/fa/</a></li>
+<li><a href='https://boards.4chan.org/mu'>/mu/</a></li>
+<li><a href='http://rbt.asia/mu/'>/mu/ archive</a></li>
+</ul>
+
+<ul>
+<li>//</li>
+<li><a href='http://freecodecamp.com/'>freecodecamp</a></li>
+<li><a href='https://gitter.im/FreeCodeCamp/FreeCodeCamp'>freecodecamp gitter</a></li>
+<li><a href='http://www.fidelitasvirtual.org/moodle3/login/index.php'>uni</a></li>
+<li><a href='https://github.com/josue-mo'>github</a></li>
+</ul>
+</div>
+</div>
+<div id='hidden'></div>
+<input id='search' autofocus='yes' placeholder='search'></div>
+</div>
+</html>
